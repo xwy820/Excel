@@ -1,0 +1,42 @@
+1. Max & Min
+max(range) ==> max(A1:A10)
+min(range) ==> min(A1:A10)
+
+2. If & Ifs
+If(A1:A10 > 30, "Old", "Young")  条件--True--False
+Ifs(F2:F10=“Salesman","Sales", F2:F10=“HR","Fire Immediately", F2:F10=“Reginal Manager","Give Christmas Bonus") 条件1-True，条件2-True，...
+
+3. Len
+Can be usede to see difference between hundreds and thousands.
+Can find incorrect sin numbers.
+len(range) ==> len(A1:A10)
+
+4. Left & Right
+left(text, num) ==> left(B2:B10, 3) 从左向右数3位
+right(text, num) ==> right(B2:B10, 4)  从右向左数4位，获取年份，这种方法仅适用于日期显示为text格式，不适用于日期格式
+
+5. Date convert to Text
+text(H2:H10,"dd/mm/yyyy")
+
+6. Trim 去掉空格
+trim(B2:B10)
+
+7. Concatenate 合并单词
+concatenate(B2," ",C2)  B:last name; C: first name
+
+8. Substitute
+with No instances:substitute(B2:B10,"-","/")  将日期中的-都替换成/  11-2-2001替换成11/2/2001
+with 1 instances:substitute(B2:B10,"-","/",1)  11-2/2001
+with 2 instances:substitute(B2:B10,"-","/",2)  11/2-2001
+
+9. Sum & SumIf & SumIfs
+sumif(range,criteria, [sum_range]) ==> sumif(G2:G10, ">50000")   G:salary
+sumifs([sum_range],criteria_range1,criteria1) ==> sumif(G2:G10, E2:E10, "Female", D2:D10, ">30") E:gender; D: age
+
+10. Count & CountIf & CountIfs
+countif(range,criteria, [sum_range]) ==> countif(G2:G10, ">50000") 
+countifs([sum_range],criteria_range1,criteria1) ==> countif(A2:A10, ">1005", D2:D10, ">30")
+
+11. Days & Networkdays
+days(end_date, start_date)  how many days
+networkdays(start_date, end_date, [holidays])  how many work days
