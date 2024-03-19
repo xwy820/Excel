@@ -1,0 +1,17 @@
+Bike Sales
+
+Data Cleaning
+1. Check duplicate
+2. Replace Material Status & Gender: ctrl + H
+   m--married; s--single
+   m--male; f--female
+3. Create a new column "Age Brackets" which easy for creating visualization
+=if(L2>54,"Old 55+",if(L2>=31,"Middle Age 31-54",if(L2<31,"Adolescent 0-30","Invalid")))
+
+Pivot Tables & Charts
+1. Avg of income by gender ==> Does their income change whether they buy or not buy?
+2. Distance per customer
+3. Customer age brackets
+
+Dashboard
+Add slicer to filter as need
